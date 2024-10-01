@@ -316,9 +316,8 @@ def repack_archives(file_path: str):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
-        prog='ProgramName',
-        description='What the program does',
-        epilog='Text at the bottom of help')
+        prog='Flibusta repacker',
+        description='Repacks fb2 archives by throwing away books of selected genres')
 
     parser.add_argument('-a', '--action', action='store', required=True, choices=['list_genres', 'repack'])
     parser.add_argument('-f', '--inpx_file', action='store', required=False)
